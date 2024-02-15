@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+:root {
+  --primary-color: #3685fb;
+  --primary-color-dark: #2f73d9;
+  --secondary-color: #fafcff;
+  --text-dark: #0d213f;
+  --text-light: #767268;
+  --extra-light: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #E7DD00;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3b3902;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #241631;
+}
+
+nav {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 200px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav__logo span {
+  color: var(--primary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 20px;
+}
+
+
+.link a {
+  padding: 10px 10px;
+  color: #ffffff;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.link a:hover {
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: #001435;
+    background-color: #E7DD00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background: #241631;
+    display: block;
+    align-content: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    margin-top: 50px; /* Add margin to the top */
+}
+
+.hero img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.glassy-rectangle {
+    background-color: rgba(255, 255, 255, 0.2); /* Example background color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Example maximum width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.glassy-rectangle p{
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 20px;
+  text-align: center;
+}
+
+.centered-text {
+  text-align: center; /* Center align the text */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add margin between text and icons */
+}
+
+.social-icons img {
+  width: 50px; /* Adjust icon size as needed */
+  margin: 0 10px; /* Adjust margin between icons */
+}
+
+.community-section {
+  background: url('assets/bg.png') no-repeat center/cover; /* Adjust background positioning */
+  padding: 100px 0; /* Adjust as needed */
+  text-align: center;
+  margin-top: 50px;
+  position: relative; /* Ensure stacking context for absolute positioning */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: left; /* Align text to the left */
+  color: #fff;
+  box-shadow: 0px 0px 5px #241631; /* Add shadow with blur radius */
+}
+
+.image-card {
+  margin-top: 20px; /* Add margin between text and images */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-card a {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 10px; /* Add margin between images */
+}
+
+.crypto-card {
+  background-color: #ffffff; /* White fill color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
+  width: 1000px; /* Set fixed width */
+  margin: 50px auto; /* Center the card */
+  align-items: center;
+}
+
+.crypto-header {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.crypto-header img {
+  width: 100px;
+  border-radius: 50px;
+  margin-right: 10px;
+  object-fit: cover; /* Ensure the logo maintains aspect ratio */
+}
+
+.crypto-info h2 {
+  border-bottom: 2px solid #000000; /* Add stroke for role */
+  font-size: 24px;
+  color: #001435;
+}
+
+.crypto-info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #001435;
+}
+
+.price {
+  font-size: 20px; /* Adjust the font size for the price */
+}
+
+.percentage {
+  font-size: 16px; /* Adjust the font size for the percentage */
+}
+
+.arrow {
+  /* Add your arrow styles here */
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin: 0 5px; /* Adjust margin as needed */
+}
+
+
+.crypto-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crypto-detail {
+  flex-basis: calc(33.33% - 10px); /* Adjust width of columns */
+  text-align: center;
+  padding-right: 10px; /* Add padding to separate text from stroke */
+}
+
+.crypto-detail:last-child {
+  border-right: none; /* Remove stroke from last column */
+}
+
+.crypto-detail h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #001435;
+}
+
+.crypto-detail p {
+  margin: 5px 0 0;
+  font-size: 24px;
+  color: #001435;
+  font-weight: 700px;
+}
+
+
+
+.Road_map {
+  background-color: #241631;
+  padding: 100px 0; /* Adjust as needed */
+  text-align: center;
+  margin-top: 50px;
+  position: relative; /* Ensure stacking context for absolute positioning */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: left; /* Align text to the left */
+  color: #fff;
+  box-shadow: 0px 0px 5px #241631; /* Add shadow with blur radius */
+}
+
+.image-card {
+  margin-top: 20px; /* Add margin between text and images */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-card img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 10px; /* Add margin between images */
+}
+
+.footer {
+    background-color: #1D0E2B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo img {
+    width: 200px; /* Adjust logo size */
+}
+
+.footer__social a {
+    margin-left: 10px; /* Adjust spacing between icons */
+}
+
+.footer__social img {
+    width: 50px; /* Adjust social media icon size */
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Add styles for mobile devices */
+
+  nav {
+    padding: 0.5rem; /* Reduce padding for mobile */
+  }
+
+  .nav__logo {
+    width: 150px; /* Adjust logo size for mobile */
+  }
+
+  .nav__links {
+    display: none; /* Hide nav links by default on mobile */
+  }
+
+  .nav__links.active {
+    display: flex; /* Show nav links when active (hamburger menu clicked) */
+    flex-direction: column; /* Stack nav links vertically */
+    position: absolute;
+    top: 70px; /* Adjust top position */
+    left: 0;
+    background-color: #241631;
+    width: 100%;
+  }
+
+  .nav__links.active .link {
+    padding: 1rem; /* Add padding to nav links */
+    text-align: center;
+    border-bottom: 1px solid #ffffff; /* Add bottom border */
+  }
+
+  .link a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .btn{
+    font-size: 14px;
+  }
+
+ .image-card {
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+  }
+
+  .image-card a {
+    width: 100%; /* Full width for each image */
+    margin: 10px 0; /* Add margin between images */
+  }
+
+  h4{
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .crypto-card {
+  background-color: #ffffff; /* White fill color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
+  width: 80%; /* Set width to 80% of the viewport width */
+  max-width: 600px; /* Limit maximum width for smaller screens */
+  margin: 50px auto; /* Center the card */
+  align-items: center;
+}
+
+.crypto-header {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.crypto-header img {
+  width: 80px; /* Decrease logo size for mobile */
+  border-radius: 50%; /* Ensure rounded corners for logo */
+  margin-bottom: 10px; /* Add spacing between logo and text */
+}
+
+.crypto-info h2 {
+  border-bottom: 2px solid #000000; /* Add stroke for role */
+  font-size: 20px; /* Decrease font size for mobile */
+  text-align: center; /* Center align text */
+}
+
+.crypto-info p {
+  margin-top: 5px; /* Add spacing above paragraph */
+  font-size: 14px; /* Decrease font size for mobile */
+  text-align: center; /* Center align text */
+}
+
+.crypto-details {
+  display: flex;
+  flex-wrap: wrap; /* Ensure columns wrap on smaller screens */
+  justify-content: center; /* Center columns horizontally */
+}
+
+.crypto-detail {
+  flex-basis: calc(50% - 10px); /* Set width of columns to 50% minus margin */
+  margin-bottom: 20px; /* Add spacing between columns */
+}
+
+.crypto-detail:last-child {
+  margin-right: 0; /* Remove margin from last column */
+  border-right: none; /* Remove stroke from last column */
+}
+
+.crypto-detail h3 {
+  font-size: 16px; /* Decrease font size for mobile */
+}
+
+.crypto-detail p {
+  margin-top: 5px; /* Add spacing above paragraph */
+  font-size: 14px; /* Decrease font size for mobile */
+}
+
+
+.Road_map {
+  background-color: #241631;
+  padding: 50px 0; /* Adjust padding for mobile */
+  text-align: center;
+  margin-top: 50px;
+  position: relative; /* Ensure stacking context for absolute positioning */
+}
+
+.content {
+  max-width: 90%; /* Adjust max-width for mobile */
+  margin: 0 auto;
+  position: relative;
+}
+
+h4 {
+  font-size: 20px; /* Decrease font size for mobile */
+  margin-bottom: 30px; /* Decrease margin for mobile */
+}
+
+.image-card {
+  margin-top: 20px; /* Add margin between text and images */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the images horizontally */
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.image-card img {
+  max-width: 90%; /* Adjust image width for mobile */
+  width: 300px; /* Set a specific width for mobile */
+  height: auto;
+  border-radius: 5px;
+  margin: 10px; 
+}
+
+
+
+  .footer {
+    flex-direction: column; 
+    padding: 1rem; 
+    text-align: center;
+  }
+
+  .footer__logo img {
+    width: 150px;
+  }
+
+  .footer__social {
+    margin-top: 10px; 
+  }
+
+  .footer__social img {
+    width: 30px; 
+  }
+}
