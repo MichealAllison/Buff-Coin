@@ -32,6 +32,11 @@
   background-color: #3b3902;
 }
 
+.fa {
+  display: block;
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
