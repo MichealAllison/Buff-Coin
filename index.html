@@ -6,21 +6,23 @@
     <title>$BUFF COIN | Website</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
 
         <nav>
-            <div class="nav__logo"><img src="BUFFCOINLOGO.png" width="100"></div>
+            <div class="nav__logo"><img src="logo.png" width="100"></div>
                 <ul class="nav__links">
-                    <li class="link"><a href="#">Home</a></li>
-                    <li class="link"><a href="#">About</a></li>
-                    <li class="link"><a href="#">Tokenomics</a></li>
-                    <li class="link"><a href="#">Roadmap</a></li>
+                    <li class="link"><a href="#top">Home</a></li>
+                    <li class="link"><a href="#About">About</a></li>
+                    <li class="link"><a href="#Tokenomics">Tokenomics</a></li>
+                    <li class="link"><a href="#Road_map">Roadmap</a></li>
                 </ul>
-                <a href="#" class="btn">BUY NOW</a>
+                <a href="#" class="btn">BUY NOW <i class="fa-solid fa-money-bill"></i></a>
         </nav>
 
         <div class="hero">
@@ -31,30 +33,30 @@
             <p>Join $BUFF, the weed-smoking buffalo, on a hilarious journey through the world of cryptocurrency and cannabis humor. Dive into our collection of memes, explore joint ventures, shop for stoner merch, and join our community of like-minded enthusiasts!</p>
             <div class="social-icons">
                 <!-- Social media icons go here -->
-                <a href="https://t.co/21m3k9c7B0"><img src="telegram.png" alt="Icon 1"></a>
-                <a href="https://x.com/BUFFCOIN_?s=20"><img src="Twitter.png" alt="Icon 2"></a>
-                <a href="#"><img src="discord.png" alt="Icon 3"></a>
+                <a href="https://t.co/21m3k9c7B0"><img src="/telegram.png" alt="Icon 1"></a>
+                <a href="https://x.com/BUFFCOIN_?s=20"><img src="/Twitter.png" alt="Icon 2"></a>
+                <a href="#"><img src="/discord.png" alt="Icon 3"></a>
             </div>
         </div>
-    </header>
 
-    <section class="community-section">
+
+    <section id="About" class="community-section">
         <div class="background-image">
             <!-- Content goes here -->
             <div class="content">
                 <h4>JOIN OUR COMMUNITY</h4>
                 <div class="image-card">
                     <!-- Image card content goes here -->
-                    <a href="https://x.com/BUFFCOIN_?s=20"><img src="twitter card.png" alt="Image 1"></a>
-                    <a href="https://t.co/21m3k9c7B0"><img src="telegram card.png" alt="Image 2"></a>
+                    <a href="https://x.com/BUFFCOIN_?s=20"><img src="assets/twitter card.png" alt="Image 1"></a>
+                    <a href="https://t.co/21m3k9c7B0"><img src="assets/telegram card.png" alt="Image 2"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="crypto-card">
+    <div id="Tokenomics" class="crypto-card">
         <div class="crypto-header">
-            <img src="favicon.png" alt="Company Logo">
+            <img src="assets/favicon.png" alt="Company Logo">
             <div class="crypto-info">
                 <h2>$BUFF COIN</h2>
                 <p><span class="price">$100</span> <i class="arrow"></i> <span class="percentage">(+5.00%)</span></p>
@@ -76,26 +78,26 @@
         </div>
     </div>
 
-    <section class="Road_map">
+    <section id="Road_map" class="Road_map">
             <div class="content">
                 <h4>ROAD MAP</h4>
                 <div class="image-card">
                     <!-- Image card content goes here -->
-                    <img src="Frame 33.png" alt="Image 1">
-                    <img src="Frame 34.png" alt="Image 2">
+                    <img src="assets/Frame 33.png" alt="Image 1">
+                    <img src="assets/Frame 34.png" alt="Image 2">
                 </div>
                 <div class="image-card">
                     <!-- Image card content goes here -->
-                    <img src="Frame 35.png" alt="Image 2">
-                    <img src="Frame 37.png" alt="Image 2">
+                    <img src="assets/Frame 35.png" alt="Image 2">
+                    <img src="assets/Frame 37.png" alt="Image 2">
                 </div>
             </div>
     </section>
 
 
-    <footer class="footer">
+    <footer id="Contact" class="footer">
         <div class="footer__logo">
-            <img src="logo.png" alt="Company Logo">
+            <img src="assets/logo.png" alt="Company Logo">
         </div>
         <div class="footer__social">
             <a href="https://x.com/BUFFCOIN_?s=20"><img src="Twitter.png" alt="Twitter"></a>
@@ -106,6 +108,9 @@
     
     
     
-    
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>
